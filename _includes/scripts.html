@@ -35,6 +35,22 @@
 <!-- Credits: http://www.no-margin-for-errors.com/ -->
 <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
 
+<!-- Google Maps Location -->
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+
+
 
 <!-- Google Maps API Vijay Goswami -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDnUhiR79FybMRGznak547ipSX_eEDJR0&callback=initMap"></script>
@@ -44,14 +60,8 @@
 
 <script type="text/javascript" src="assets/js/gmaps.min.js"></script>
 
-<!-- Google Maps Location -->
- <script>
-    var map = new GMaps({
-      el: '#map',
-      lat: -12.043333,
-      lng: -77.028333
-    });
-  </script>
+
+
 
 
 <!-- Js | Js -->
